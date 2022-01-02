@@ -1,2 +1,62 @@
 /* Import from font.css file*/
 @import url(fonts.css);
+
+.header-area .main-menu .navbar .navbar-brand {
+    padding: 0 5rem 0 5rem;
+}
+.header-area .main-menu .navbar{
+    padding:1rem 10rem;
+}
+.header-area .main-menu .nav-item .nav-link{
+    font:normal 200 8px/2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: whitesmoke;
+}
+.header-area .main-menu .navbar-nav .active a {
+    background:#a52a2a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header-area .main-menu .navbar-nav a:hover {
+    background:#a52a2a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/*Banner Area*/
+.site-main .site-banner {
+ background:url(../assets/img/backgrounds/h_img.jpg);
+ background-repeat:no-repeat;
+}
+.site-main .site-banner .site-title h1{
+    padding-top:35%;
+    font-weight: 50;
+}
+ .site-banner .site-title h2{
+    content: '';
+    height: 2px;
+    width: 18vh;
+    background: transparent;
+    display: inline;
+    margin-left: 5;
+}
+.site-banner .site-title h1{
+    font-size: 5rem;
+    color: #b8860b;
+    text-transform: uppercase;
+}
+.site-banner .site-title h2{
+    font-size: 2rem;
+    color: #b8860b;
+}
+.site-banner .banner-image>img{
+    padding: 5rem 0;
+    width: 90rem;
+}
+.title-text{
+    font:normal bold 50px/72px;
+    color: whitesmoke;
+}
