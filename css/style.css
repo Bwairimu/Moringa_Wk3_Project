@@ -5,7 +5,7 @@
     padding: 0 5rem 0 5rem;
 }
 .header-area .main-menu .navbar{
-    padding:1rem 10rem;
+    padding:1rem 2rem;
 }
 .header-area .main-menu .nav-item .nav-link{
     font:normal 200 8px/2px;
@@ -21,7 +21,7 @@
     background-clip: text;
 }
 .header-area .main-menu .navbar-nav a:hover {
-    background:#a52a2a;
+    background:#fb4f14;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -32,32 +32,25 @@
  background-repeat:no-repeat;
 }
 .site-banner .site-title h1{
-    padding: top 5px;
+    padding-top: 5px;
     padding-bottom: 5px;
     font-weight: 40;
+    color: whitesmoke;
+    font-size: 5rem;
+    text-transform: uppercase;
 }
  .site-banner .site-title h2{
     content: '';
+    padding-top: 5px;
     height: 2px;
     width: 18vh;
-    background: transparent;
     display: inline;
-    margin-left: 5;
-    font-size: 2rem;
-    color: #b8860b;
-}
-.site-banner .site-title h1{
-    font-size: 5rem;
-    color: #b8860b;
-    text-transform: uppercase;
-}
-.site-banner .banner-image {
-    padding: 5rem 0;
-    width: 90rem;
+    font-size: 1rem;
+    color: whitesmoke;
 }
 .title-text {
     font:normal bold 50px/72px;
-    color: whitesmoke;
+    color: #fb4f14;
 }
 .about-area {
     padding: 3rem 3rem;

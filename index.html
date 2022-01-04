@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="/bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>DELANI STUDIO</title>
+    <style>
+        .site-banner {
+          background-image: url('./assets/img/backgrounds/h_img.jpg');
+          background-size: cover;
+        }
+        .services-area  {
+            background-image: url(./assets/img/backgrounds/s_image.jpg);
+            background-size: cover;
+        }
+        .contact-us{
+            background-image: url(./assets/img/backgrounds/c_image.jpg);
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,9 +72,8 @@
         <div class="container site-main">
             <div class="row">
                 <div class="col-md-12 site-title">
-                    <h1 class="text-title text-center">Welcome<br>to Delani Studio</h1>
-                    <img src="./assets/img/backgrounds/h_img.jpg" alt="h-image" class="img-fluid">
-                    <h2 class="text-title text-center">Amazing people are making amazing designs in a fun environment.</h2>
+                    <h1 class="title-text text-uppercase text-center"><span><img src="/assets/img/logo/logo.png" alt="logo"></span><br>Welcome <br>to Delani Studio</h1>
+                    <h2 class="title-text text-uppercase text-center">Amazing people are making amazing designs in a fun environment.</h2>
                 </div>
             </div>
         </div>
@@ -90,7 +103,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <h3 class="text-title text-uppercase text-center">Services</h3>
+                    <h3 class="title-text text-uppercase text-center">Services</h3>
                     <p class="paragraph2">
                         Before we sign a contract or write a line of code our team will spend the necessary time needed
                         to understand your product vision.<br>
@@ -105,12 +118,12 @@
     <section class="services-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card-group">
-                        <div class="card h-100">
+                        <div class="card">
                             <img src="./assets/img/services_icons/design_icon.png" class="card-img-top" alt="design">
                             <div class="card-body">
-                                <h4 class="card-title text-center pt-5">design</h4>
+                                <h4 class="card-title text-uppercase text-center pt-5">design</h4>
                                 <p class="card-text">Our design practice offers a full range of services including brand
                                     strategy, interaction and visual design and user experience testing. Throughout your
                                     project, our designers create and implement visual design and workflows,
@@ -119,10 +132,10 @@
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
-                        <div class="card h-100">
+                        <div class="card">
                             <img src="./assets/img/services_icons/dev_icon.png" class="card-img-top" alt="Development">
                             <div class="card-body">
-                                <h4 class="card-title text-center pt-5">Development</h4>
+                                <h4 class="card-title text-uppercase text-center pt-5">Development</h4>
                                 <p class="card-text">All engineers are fluent in the latest enterprise, mobile and web
                                     development technologies. They collaborate with your team to write, and improve code
                                     on a daily basis,
@@ -130,7 +143,7 @@
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
-                        <div class="card h-100">
+                        <div class="card">
                             <img src="./assets/img/services_icons/product_icon.png" class="card-img-top"
                                 alt="Product Management">
                             <div class="card-body">
@@ -150,40 +163,100 @@
     <!--Portfolio Area-->
     <section class="portfolio-area">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4"></div>">
-            <div class="first-col">
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <div class="work">
-                        <img src="./assets/img/portfolio/work1.jpg" alt="Work-1">
+            <div class="row">
+                <div class="col-lg-12 text-center portfolio-title">
+                    <h5 class="title-text text-uppercase title-text pt-5">Portfolio</h5>
+                </div>
+            </div>
+            <div class="container Portfolio-list">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work1.jpg" alt="Work-1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work2.jpg" alt="Work-2">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work3.jpg" alt="Work-3">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work4.jpg" alt="Work-4">
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="portfolio">
-                        <img src="./assets/img/portfolio/work2.jpg" alt="Work-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work5.jpg" alt="Work-5">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="portfolio">
-                        <img src="./assets/img/portfolio/work3.jpg" alt="Work-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work6.jpg" alt="Work-6">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="portfolio">
-                        <img src="./assets/img/portfolio/work4.jpg" alt="Work-4">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work7.jpg" alt="Work-7">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio">
+                            <img src="./assets/img/portfolio/work8.jpg" alt="Work-8">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!--End Portfolio Area-->
+    <!--Start Contact form Area-->
+    <section class="contact-us">
+        <div class="contact-form">
+            <div class="container">
+                <h6 class="title-text text-uppercase text-center">contact us</h6>
+                <div class="row">
+                    <div class="mb-3">
+                        <form class="row g-2">
+                            <div class="col-auto">
+                            <input type="name" class="form-control" id="FormControlInput" placeholder="Name..">
+                        </div>
+                        <div class="col-auto">
+                            <input type="email" class="form-control" id="FormControlInput" placeholder="Email..">
+                        </div>
+                        </form>
+                </div>
+                <div class="row">
+                    <form class="textarea">
+                    <div class="mb-3">
+                        <label for="FormControlTextarea" class="form-label"></label>
+                        <textarea class="form-control" id="FormControlTextarea" rows="3" placeholder="Your Message here...."></textarea>
+                    </div>
+                    </form>
+                </div>      
+            </div>
         </div>
     </section>
-
-    <!--End Portfolio Area-->
-
+    <!--End Contact form Area-->
 
     <!--jquery js file-->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <!--js file-->
     <script src=""></script>
+    <section>
+        <div class="blockquote-footer text-center">
+            <footer>
+                <p> &copy; 2021 Basilia Wairimu. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
 </body>
 
 </html>
