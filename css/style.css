@@ -51,24 +51,119 @@
 .title-text {
     font:normal bold 50px/72px;
     color: #fb4f14;
+    text-align: center;
+    letter-spacing: 3px;
 }
 .about-area {
     padding: 3rem 3rem;
 }
-.about-area .about-title h3 >paragraph1{
-    display: inline;
+.about-area .about-title .title-text.paragraph1{
     font: normal bold 49px/60px;
-    letter-spacing: 21px;
+    letter-spacing: 2px;
     color: #000014 ;
+    text-align: center;
 }
 .about-area .about-title .paragraph1{
-    padding: 4rem 0;
+    padding: 2rem 0;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000014;
+}
+.services-area .paragraph2{
+    margin-top: 0.25em;
+    padding: 2rem 0;
+    letter-spacing: 2px;
+    text-align: center;
+    color: whitesmoke;
+}
+.whatWeDo-area{
+    padding: 3em 3em;
+    text-align: center;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.image{
+    position: relative;
+    width:100%;
+    display: block;
+}
+.image_overlay{
+    position: absolute;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #008cba;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;  
+    transform: scale(0);
+}
+.container-fluid_whatWeDo-list{
+    position: relative;
+    width: 100%;
+}
+.container-fluid_whatWeDo-list:hover .overlay{
+    transform: scale(1);
+}
+.text-block{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+}
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image_overlay > * {
+transform: translateY(20px);
+transition: transform 0.6s ease;
+}
+.image_overlay:hover{
+    opacity: 1;
+}
+.image_title {
+    font-size:2em;
+    font-weight: bold;
+}
+.image_top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.image_centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+.image_description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
 }
 .portfolio-area {
     padding: 1rem 20rem;
     display: flex;
     margin-bottom: 4rem;
-    
+    letter-spacing: 3px;
+    text-align: center;
 }
 .portfolio-area .first-row .col-lg-3>work>{
     border:1px solid ;
@@ -88,4 +183,9 @@
 }
 .site-main .portfolio-area .first-row .col-lg-3>.work:hover>img{
     filter: brightness(0.15);
+}
+.footer-area .footer-list{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline;
 }

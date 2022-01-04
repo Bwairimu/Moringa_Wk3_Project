@@ -17,11 +17,11 @@
           background-size: cover;
         }
         .services-area  {
-            background-image: url(./assets/img/backgrounds/s_image.jpg);
+            background-image: url('./assets/img/backgrounds/s_image.jpg');
             background-size: cover;
         }
         .contact-us{
-            background-image: url(./assets/img/backgrounds/c_image.jpg);
+            background-image: url('./assets/img/backgrounds/c_image.jpg');
             background-size: cover;
         }
     </style>
@@ -115,44 +115,48 @@
         </div>
     </section>
     <!--End Services Area-->
-    <section class="services-area">
-        <div class="container">
+    <section class="whatWeDo-area">
+        <div class="container-fluid_whatWeDo-list">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card-group">
-                        <div class="card overflow-hidden">
-                            <img src="./assets/img/services_icons/design_icon.png" class="card-img-top" alt="design">
-                            <div class="card-body">
-                                <h4 class="card-title text-uppercase text-center pt-5">design</h4>
-                                <p class="card-text">Our design practice offers a full range of services including brand
-                                    strategy, interaction and visual design and user experience testing. Throughout your
-                                    project, our designers create and implement visual design and workflows,
-                                    solicit user feedback and work with you to make sure what gets built is what is
-                                    needed.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h4 class="title-text text-uppercase text-center">What We Do</h4>
+                        <div class="overlay">
+                            <div class="image_top-left pt-5">
+                                <img class="img_design" src="./assets/img/services_icons/design_icon.png" class="image" alt="design">
+                                <div class="image_title text-uppercase text-center pt-5">design</div>
+                                <p class="text-block">Our design practice offers a full range of services including brand
+                                        strategy, interaction and visual design and user experience testing. Throughout your
+                                        project, our designers create and implement visual design and workflows,
+                                        solicit user feedback and work with you to make sure what gets built is what is
+                                        needed.</p>
+                                <p class="image_text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="./assets/img/services_icons/dev_icon.png" class="card-img-top" alt="Development">
-                            <div class="card-body overflow-hidden">
-                                <h4 class="card-title text-uppercase text-center pt-5">Development</h4>
-                                <p class="card-text">All engineers are fluent in the latest enterprise, mobile and web
+                       <div class="col-lg-3 col-md-6 col-sm-12">
+                          <div class="image_overlay">
+                            <img class="img_dev" src="./assets/img/services_icons/dev_icon.png" class="image" alt="Development">
+                            <div class="image_centered pt-5">
+                                <div class="image_title text-uppercase text-center pt-5">Development</div>
+                                    <p class="text-block">All engineers are fluent in the latest enterprise, mobile and web
                                     development technologies. They collaborate with your team to write, and improve code
                                     on a daily basis,
                                     using proven practices such as test-driven development and pair programming.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <img src="./assets/img/services_icons/product_icon.png" class="card-img-top"
-                                alt="Product Management">
-                            <div class="card-body overflow-hidden">
-                                <h4 class="card-title">Product Management</h4>
-                                <p class="card-text">Planning and development is iterative. Because we are constantly
-                                    coding and testing, the products we build are always ready to go live. This
-                                    iterative process allows for changes as business requirements evolve.
-                                    .</p>
+                          </div>
+                       </div>
+                       <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="overlay">
+                              <div class="image_top-right">
+                                <img class="img_product" src="./assets/img/services_icons/product_icon.png" class="image" alt="Product Management">
+                                <h4 class="image-title">Product Management</h4>
+                                <p class="text-block">Planning and development is iterative. Because we are constantly
+                                coding and testing, the products we build are always ready to go live. This
+                                iterative process allows for changes as business requirements evolve.
+                                .</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -259,7 +263,6 @@
         </div>
     </section>
     <!--End Contact form Area-->
-
     <!--jquery js file-->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <!--js file-->
@@ -277,7 +280,7 @@
                 <img src="./assets/img/social_icons/stumble_upon.png" alt="Stumble">
                 <img src="./assets/img/social_icons/twitter.png" alt="Twitter">
                 <img src="./assets/img/social_icons/you_tube.png" alt="Youtube">
-                <p> &copy; 2021 Basilia Wairimu. All rights reserved.</p>
+                <p> &copy; 2021 DELANI STUDIO</p>
             </footer>
         </div>
     </section>
