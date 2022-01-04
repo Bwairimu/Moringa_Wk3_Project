@@ -120,7 +120,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card-group">
-                        <div class="card">
+                        <div class="card overflow-hidden">
                             <img src="./assets/img/services_icons/design_icon.png" class="card-img-top" alt="design">
                             <div class="card-body">
                                 <h4 class="card-title text-uppercase text-center pt-5">design</h4>
@@ -134,7 +134,7 @@
                         </div>
                         <div class="card">
                             <img src="./assets/img/services_icons/dev_icon.png" class="card-img-top" alt="Development">
-                            <div class="card-body">
+                            <div class="card-body overflow-hidden">
                                 <h4 class="card-title text-uppercase text-center pt-5">Development</h4>
                                 <p class="card-text">All engineers are fluent in the latest enterprise, mobile and web
                                     development technologies. They collaborate with your team to write, and improve code
@@ -146,7 +146,7 @@
                         <div class="card">
                             <img src="./assets/img/services_icons/product_icon.png" class="card-img-top"
                                 alt="Product Management">
-                            <div class="card-body">
+                            <div class="card-body overflow-hidden">
                                 <h4 class="card-title">Product Management</h4>
                                 <p class="card-text">Planning and development is iterative. Because we are constantly
                                     coding and testing, the products we build are always ready to go live. This
@@ -219,28 +219,42 @@
     <!--End Portfolio Area-->
     <!--Start Contact form Area-->
     <section class="contact-us">
-        <div class="contact-form">
+        <div class="contactForm">
             <div class="container">
                 <h6 class="title-text text-uppercase text-center">contact us</h6>
                 <div class="row">
                     <div class="mb-3">
-                        <form class="row g-2">
-                            <div class="col-auto">
-                            <input type="name" class="form-control" id="FormControlInput" placeholder="Name..">
-                        </div>
-                        <div class="col-auto">
-                            <input type="email" class="form-control" id="FormControlInput" placeholder="Email..">
-                        </div>
+                        <form class="row g-2 needs-validation">
+                            <div class="col-md-6">
+                            <input type="name" class="form-control" id="FormControlInputValidation01"" placeholder="Name.." required>
+                            <div class="valid-feedback">Looks good!</div>
+                            </div>
+                            <div class="col-md-6">
+                            <input type="email" class="form-control" id="FormControlInputValidation02" placeholder="Email.." required>
+                            <div class="invalid-feedback">Please provide a valid Email</div>
+                            </div>
                         </form>
+                    </div>
                 </div>
                 <div class="row">
-                    <form class="textarea">
                     <div class="mb-3">
-                        <label for="FormControlTextarea" class="form-label"></label>
-                        <textarea class="form-control" id="FormControlTextarea" rows="3" placeholder="Your Message here...."></textarea>
+                        <form class="textarea needs-validation">
+                            <label for="FormControlTextarea" class="form-label"></label>
+                            <textarea class="form-control" id="FormControlInputValidationTextarea" rows="3" placeholder="Your Message here...." required></textarea>
+                            <div class="invalid-feedback">Additional Information</div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                  <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                                  <div class="invalid-feedback">You must agree before submitting.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                        </form>
                     </div>
-                    </form>
-                </div>      
+                </div>    
             </div>
         </div>
     </section>
@@ -249,14 +263,23 @@
     <!--jquery js file-->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <!--js file-->
-    <script src=""></script>
-    <section>
+    <script src="script.js"></script>
+    <section class="footer-area">
         <div class="blockquote-footer text-center">
-            <footer>
+            <footer class="footer-list">
+                <img src="./assets/img/social_icons/behance.png" alt="Behance">
+                <img src="./assets/img/social_icons/dribble.png" alt="Dribble">
+                <img src="./assets/img/social_icons/facebook.png" alt="Facebook">
+                <img src="./assets/img/social_icons/flickr.png" alt="Flickr">
+                <img src="./assets/img/social_icons/g_plus.png" alt="G_plus">
+                <img src="./assets/img/social_icons/pinterest.png" alt="Pinterest">
+                <img src="./assets/img/social_icons/skype.png" alt="skype">
+                <img src="./assets/img/social_icons/stumble_upon.png" alt="Stumble">
+                <img src="./assets/img/social_icons/twitter.png" alt="Twitter">
+                <img src="./assets/img/social_icons/you_tube.png" alt="Youtube">
                 <p> &copy; 2021 Basilia Wairimu. All rights reserved.</p>
             </footer>
         </div>
     </section>
 </body>
-
 </html>
