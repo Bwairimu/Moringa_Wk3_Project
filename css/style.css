@@ -76,44 +76,47 @@
     text-align: center;
     color: whitesmoke;
 }
-.whatWeDo-area .brand{
-    padding: 3em 20em;
+.whatWeDo-area{
+    padding: 4em 0em;
     margin-bottom: 10em;
     letter-spacing: 2px;
+    text-transform:inherit;
     overflow: hidden;
+    display: inline-block;
 }
 .h3 .h4 .h5 .title-text{
     padding-top: 2px;
     padding-bottom: 2px;
     margin-bottom: 2px;
     margin-top: 2px;
-    display: inline-block;
+}
+.whatWeDo-area {
+    padding: 7rem 2rem;
+}
+.whatWeDo-area .title-text {
+    padding: 0 14rem;
+    display:inline-block;
+    position:absolute;
 }
 .whatWeDo-area .img-row .col-lg-4{
-    justify-content: center;
-    display: inline-flex;
+    box-shadow: grey;
+    filter: brightness(0.05);
 }
-.image{
+.image {
     position: relative;
-    width:100px;
-    display: inline-flex;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    border: 1px solid grey;
+    width: 100%;
 }
-.container-fluid_whatWeDo-list{
-    position: relative;
-}
-
 .text-block{
-    padding: 3px 3px;
+    padding: 2rem 2rem;
+    margin: 9rem 0;
     color: #000014;
     font-size: 10px;
     position: absolute;
-    left: 30%;
-    right: 30%;
-    text-align:center;
-    overflow: hidden;
-}
-.text{
-
+    display: inline-block;
+    width: 30%;
 }
 .portfolio-area {
     padding: 1rem 20rem;
@@ -132,10 +135,10 @@
     cursor: pointer;
     transition: transform.4s ease;
 }
-.portfolio-area .first-row .col-lg-3>.work>img{
+.portfolio-area .first-row .col-lg-3 >.work>img{
     width:50%;
 }
-.site-main .portfolio-area .first-row .col-lg-3>.work:hover{
+.site-main .portfolio-area .first-row .col-lg-3 >.work:hover{
     transform: scale(1.1);
 
 }
@@ -144,6 +147,6 @@
 }
 .footer-area .footer-list{
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     display: inline;
 }

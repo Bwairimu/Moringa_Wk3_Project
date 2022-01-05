@@ -14,3 +14,9 @@
         }, false)
       })
   })()
+
+  $(document).ready(function(){
+    $("image").click(function(){
+      $("p.text-block").hide();
+    });
+}); 

@@ -117,49 +117,47 @@
         </div>
     </section>
     <!--End Services Area-->
+    <!--Start What We Do Area-->
     <section class="whatWeDo-area">
-        <div class="container-fluid_whatWeDo-list">
-            <div class="row">
-                <div class="col-xl-6 col-lg-12 col-sm-6">
-                    <h5 class="title-text text-uppercase text-center pt-5">What We Do</h5>
-                    <div class="img-row">
-                        <div class="col-lg-4 col-md-6 col-md-6">
-                            <div class="brand">
-                                <img src="./assets/img/services_icons/design_icon.png" class="image" alt="design">
-                                <div class="image_title text-uppercase text-center pt-5">design</div>
-                                <p class="text-block">Our design practice offers a full range of services including brand
-                                        strategy, interaction and visual design and user experience testing. Throughout your
-                                        project, our designers create and implement visual design and workflows,
-                                        solicit user feedback and work with you to make sure what gets built is what is
-                                        needed.</p>
-                                <p class="text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
+        <div class="container-fluid">
+            <div class="project-title pb-5">
+                <h4 class="title-text text-uppercase title-h4">What We Do</h4>
+            </div>
+            <div class="row-grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 elment-item all">
+                    <div class="what-we-do">
+                        <div class="img">
+                            <img src="./assets/img/services_icons/design_icon.png" alt="Design">
                         </div>
-                        <div class="col-lg-4 col-md-6 col-md-6">
-                            <div class="brand">
-                                <img src="./assets/img/services_icons/dev_icon.png" class="image" alt="Development">
-                                <div class="image_title text-uppercase text-center pt-5">Development</div>
-                                <p class="text-block">All engineers are fluent in the latest enterprise, mobile and web
-                                    development technologies. They collaborate with your team to write, and improve code
-                                    on a daily basis,using proven practices such as test-driven development and pair programming.</p>
-                                <p class="text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
+                        <div class="title.py-4 px-4">
+                            <h4 class="text-uppercase">Design</h4>
+                            <span class="text-secondary">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, 
+                                solicit user feedback and work with you to make sure what gets built is what is needed.</span>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-md-6">
-                            <div class="brand">
-                                <img src="./assets/img/services_icons/product_icon.png" class="image" alt="Product Management">
-                                <div class="image-title text-uppercase text-center pt-5">Product Management</div>
-                                <p class="text-block">Planning and development is iterative. Because we are constantly
+                        <div class="img py-4 px-4">
+                            <img src="./assets/img/services_icons/dev_icon.png" alt="Development">
+                        </div>
+                        <div class="title.py-4 px-4">
+                            <h4 class="text-uppercase">Development</h4>
+                            <span class="text-secondary">All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, 
+                                and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</span>
+                        </div>
+                        <div class="img py-4 px-4">
+                            <img src="./assets/img/services_icons/product_icon.png" alt="Product Development">
+                        </div>
+                        <div class="title.py-4 px-4">
+                            <h4 class="text-uppercase">Product Management</h4>
+                            <span class="text-secondary">Planning and development is iterative. Because we are constantly
                                 coding and testing, the products we build are always ready to go live. This
-                                iterative process allows for changes as business requirements evolve.</p>
-                                <p class="text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
+                                iterative process allows for changes as business requirements evolve.</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+            </div>
+    <!-- End of What We Do Area-->
+
     <!--Portfolio Area-->
     <section class="portfolio-area">
         <div class="container">
@@ -259,7 +257,14 @@
         </div>
     </section>
     <!--End Contact form Area-->
-    
+    <script>
+        $(document).ready(function(){
+        $("image").click(function(){
+          $(".text-block").hide();
+        });
+    }); 
+    </script>
+   
     <!--js file-->
     <script src="script.js"></script>
     <section class="footer-area">
