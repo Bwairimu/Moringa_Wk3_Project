@@ -79,15 +79,23 @@
 .whatWeDo-area{
     padding: 2rem 2rem;
     margin-bottom: 5rem;
+    font-size: 15px;
     letter-spacing: 2px;
     text-transform:inherit;
     overflow: hidden;
     display: inline;
 }
-.whatWeDo-area .project-title .row-grid .col-lg-4{
-    display:inline;
-    justify-content: center;
+.col-lg-4 col-md-6 col-sm-12{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
+.row-grid::after {
+    content:'';
+    clear: both;
+    display: table;
+}
+
 #toggle_1 #toggle_2 #toggle_3{
     width:250px;
     height:250px;
@@ -124,38 +132,28 @@ h2.h3 .h4 .h5 {
 }
 .text-block{
     padding: 2rem 2rem;
-    margin: 9rem 0;
+    margin: 0 0 0 0;
     color: #000014;
     font-size: 10px;
     position: absolute;
     display: flex;
     width: 30%;
 }
-.portfolio-area {
-    padding: 1rem 20rem;
-    display: flex;
-    margin-bottom: 4rem;
-    letter-spacing: 3px;
+.portfolio-area .first-row .col-lg-3 {
+    border:1px solid whitesmoke;
     text-align: center;
-}
-.portfolio-area .first-row .col-lg-3>work>{
-    border:1px solid ;
-    text-align: center;
-    padding: 1.8rem 0rem;
-    margin:9rem 0;
-    width: 180px;
-    height: 100px;
+    padding: 1rem 0rem;
+    margin:5rem 5rem 5rem 0;
+    width: 10%;
+    height: 25px;
     cursor: pointer;
     transition: transform.4s ease;
 }
-.portfolio-area .first-row .col-lg-3 >.work>img{
-    width:50%;
-}
-.site-main .portfolio-area .first-row .col-lg-3 >.work:hover{
+.portfolio-area .row .col-lg-3:hover{
     transform: scale(1.1);
 
 }
-.site-main .portfolio-area .first-row .col-lg-3>.work:hover>img{
+.portfolio-area .row .col-lg-3:hover>img{
     filter: brightness(0.15);
 }
 .footer-area .footer-list{

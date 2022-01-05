@@ -12,5 +12,6 @@
   
           form.classList.add('was-validated')
         }, false)
+        alert(Johndoe, we have received your message.Thank you for reaching out to us.);
       })
   })()
