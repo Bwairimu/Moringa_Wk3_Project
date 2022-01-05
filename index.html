@@ -128,28 +128,30 @@
                         <div class="img">
                             <img src="./assets/img/services_icons/design_icon.png" alt="Design">
                         </div>
-                        <div class="title.py-4 px-4">
-                            <h4 class="text-uppercase">Design</h4>
-                            <span class="text-secondary">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, 
-                                solicit user feedback and work with you to make sure what gets built is what is needed.</span>
+                        <div class="title.py-4">
+                            <button id="show_hide">DESIGN</button> 
+                            <span id="toggle_1"><span class="text-secondary">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, 
+                                solicit user feedback and work with you to make sure what gets built is what is needed.</span><br>
+                            </span>
                         </div>
-                        <div class="img py-4 px-4">
-                            <img src="./assets/img/services_icons/dev_icon.png" alt="Development">
+                        <span class="img py-4">
+                            <img src="./assets/img/services_icons/dev_icon.png" alt="Development"></span>
+                        <div class="title.py-4">
+                            <button id="show_hide">DEVELOPMENT</button> 
+                                <span id="toggle_2"><span class="text-secondary">All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, 
+                                    and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</span><br>
+                                </span>
                         </div>
-                        <div class="title.py-4 px-4">
-                            <h4 class="text-uppercase">Development</h4>
-                            <span class="text-secondary">All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, 
-                                and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</span>
-                        </div>
-                        <div class="img py-4 px-4">
+                        <div class="img py-4">
                             <img src="./assets/img/services_icons/product_icon.png" alt="Product Development">
                         </div>
-                        <div class="title.py-4 px-4">
-                            <h4 class="text-uppercase">Product Management</h4>
-                            <span class="text-secondary">Planning and development is iterative. Because we are constantly
-                                coding and testing, the products we build are always ready to go live. This
-                                iterative process allows for changes as business requirements evolve.</span>
-                        </div>
+                        <div class="title.py-4">
+                                <button id="show_hide">PRODUCT MANAGEMENT</button> 
+                                <span id="toggle_3"><span class="text-secondary">Planning and development is iterative. Because we are constantly
+                                    coding and testing, the products we build are always ready to go live. This
+                                    iterative process allows for changes as business requirements evolve.</span><br></div>
+                                </span>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -256,6 +258,15 @@
     <!--End Contact form Area-->
     <!--jquery js file-->
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("#show_hide").click(function () {
+          $("#toggle_1,#toggle_2,#toggle_3").toggle({
+              duration:1500,
+          });
+       });
+       });
+    </script>
     <!--js file-->
     <script src="script.js"></script>
     <section class="footer-area">

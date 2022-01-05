@@ -41,12 +41,12 @@
 }
  .site-banner .site-title h2{
     content: '';
-    padding-top: 5px;
+    padding: 5px 10px;
     height: 2px;
-    width: 18vh;
     display: inline;
     font-size: 1rem;
     color: whitesmoke;
+    text-align: center;
 }
 .title-text {
     font:normal bold 50px/72px;
@@ -77,29 +77,37 @@
     color: whitesmoke;
 }
 .whatWeDo-area{
-    padding: 2em 0;
-    margin-bottom: 10em;
+    padding: 2rem 2rem;
+    margin-bottom: 5rem;
     letter-spacing: 2px;
     text-transform:inherit;
     overflow: hidden;
-    display: inline-block;
+    display: inline;
 }
 .whatWeDo-area .project-title .row-grid .col-lg-4{
-    display: inline-block;
-    width: 33%;
+    display:inline;
     justify-content: center;
 }
-.h3 .h4 .h5 {
+#toggle_1 #toggle_2 #toggle_3{
+    width:250px;
+    height:250px;
+    border: solid 1px grey;
+    background:#fff;
+    margin:20px;
+}
+#show-hide{
+    text-transform: uppercase;
+}
+h2.h3 .h4 .h5 {
     padding-top: 2px;
     padding-bottom: 2px;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin:0 0 2px;
 }
 .whatWeDo-area {
-    padding: 7rem 2rem;
+    padding: 4rem 2rem;
 }
 .whatWeDo-area {
-    padding: 0 14rem;
+    padding: 0 2rem;
     display:inline-block;
     position:absolute;
 }
