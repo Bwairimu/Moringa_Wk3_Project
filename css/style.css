@@ -77,14 +77,19 @@
     color: whitesmoke;
 }
 .whatWeDo-area{
-    padding: 4em 0em;
+    padding: 2em 0;
     margin-bottom: 10em;
     letter-spacing: 2px;
     text-transform:inherit;
     overflow: hidden;
     display: inline-block;
 }
-.h3 .h4 .h5 .title-text{
+.whatWeDo-area .project-title .row-grid .col-lg-4{
+    display: inline-block;
+    width: 33%;
+    justify-content: center;
+}
+.h3 .h4 .h5 {
     padding-top: 2px;
     padding-bottom: 2px;
     margin-bottom: 2px;
@@ -93,12 +98,12 @@
 .whatWeDo-area {
     padding: 7rem 2rem;
 }
-.whatWeDo-area .title-text {
+.whatWeDo-area {
     padding: 0 14rem;
     display:inline-block;
     position:absolute;
 }
-.whatWeDo-area .img-row .col-lg-4{
+.whatWeDo-area .img .col-lg-4{
     box-shadow: grey;
     filter: brightness(0.05);
 }
@@ -115,7 +120,7 @@
     color: #000014;
     font-size: 10px;
     position: absolute;
-    display: inline-block;
+    display: flex;
     width: 30%;
 }
 .portfolio-area {
