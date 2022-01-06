@@ -14,14 +14,16 @@
     <title>Delani Studio</title>
     <style>
         .site-banner {
-          background-image: url('./assets/img/backgrounds/h_img.jpg');
-          background-size: cover;
+            background-image: url('./assets/img/backgrounds/h_img.jpg');
+            background-size: cover;
         }
-        .services-area  {
+
+        .services-area {
             background-image: url('./assets/img/backgrounds/s_image.jpg');
             background-size: cover;
         }
-        .contact-us{
+
+        .contact-us {
             background-image: url('./assets/img/backgrounds/c_image.jpg');
             background-size: cover;
         }
@@ -63,6 +65,7 @@
                             </ul>
                         </div>
                     </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -73,8 +76,10 @@
         <div class="container site-main">
             <div class="row">
                 <div class="col-md-12 site-title">
-                    <h1 class="title-text text-uppercase text-center"><span><img src="/assets/img/logo/logo.png" alt="logo"></span><br>Welcome <br>to Delani Studio</h1>
-                    <h2 class="title-text text-uppercase text-center">Amazing people are making amazing designs in a fun environment.</h2>
+                    <h1 class="title-text text-uppercase text-center"><span><img src="/assets/img/logo/logo.png"
+                                alt="logo"></span><br>Welcome <br>to Delani Studio</h1>
+                    <h2 class="title-text text-uppercase text-center"><span>Amazing people are making amazing designs in
+                            a fun environment.</span></h2>
                 </div>
             </div>
         </div>
@@ -108,8 +113,8 @@
                     <p class="paragraph2">
                         Before we sign a contract or write a line of code our team will spend the necessary time needed
                         to understand your product vision.<br>
-                        the outcome of this scoping session is proposal or high-level statement of work. <br>
-                        based on your requirements, we can provide a complete offering or just the pieces you need.
+                        The outcome of this scoping session is proposal or high-level statement of work. <br>
+                        Based on your requirements, we can provide a complete offering or just the pieces you need.
                     </p>
                 </div>
             </div>
@@ -119,48 +124,61 @@
     <!--Start What We Do Area-->
     <section class="whatWeDo-area">
         <div class="container-fluid">
-            <div class="project-title pt-4">
+            <div class="row">
                 <h3 class="title-text text-uppercase text-center">What We Do</h3>
-            </div>
-            <div class="row-grid">
-                <div class="col-lg-4 col-md-6 col-sm-12 elements">
-                    <div class="what-we-do">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img src="./assets/img/services_icons/design_icon.png" style="width:30%" alt="Design">
-                        </div>
-                        <div class="title.py-4">
-                            <button id="show_hide">DESIGN</button> 
-                            <div id="toggle_1"><span class="text-secondary">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, 
-                                solicit user feedback and work with you to make sure what gets built is what is needed.</span><br>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 10rem"><img src="./assets/img/services_icons/dev_icon.png" class="card-img-top" alt="Development">
+                        <div class="card-body">
+                            <h6 class="card-title"><button id="show_hide">DEVELOPMENT</button></h6>
+                            <div id="toggle_2"><p class="card-text">All engineers are fluent in the latest
+                                    enterprise, mobile and web development technologies. They collaborate with your
+                                    team to write, and improve code on a daily basis, using proven practices such as
+                                    test-driven development and pair programming.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img src="./assets/img/services_icons/dev_icon.png" style="width:30%" alt="Development"></div>
-                        <div class="title.py-4">
-                            <button id="show_hide">DEVELOPMENT</button> 
-                                <div id="toggle_2"><span class="text-secondary">All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, 
-                                    and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</span><br>
-                                </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img src="./assets/img/services_icons/product_icon.png" style="width:30%" alt="Product Development">
-                        </div>
-                        <div class="title.py-4">
-                                <button id="show_hide">PRODUCT MANAGEMENT</button> 
-                                <div id="toggle_3"><span class="text-secondary">Planning and development is iterative. Because we are constantly
-                                    coding and testing, the products we build are always ready to go live. This
-                                    iterative process allows for changes as business requirements evolve.</span><br></div>
-                                </div>
+                            <a href="#" class="btn btn-primary">What We Do</a>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width:10rem"><img src="./assets/img/services_icons/design_icon.png"
+                            class="card-img-top" alt="Design">
+                        <div class="card-body">
+                            <h6 class="card-title"><button id="show_hide">DESIGN</button></h6>
+                            <div id="toggle_1"><p class="card-text">Our design practice offers a full range
+                                    of services including brand strategy, interaction and visual design and user
+                                    experience testing. Throughout your project, our designers create and implement
+                                    visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is
+                                    needed.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">What We do</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 10rem"><img src="./assets/img/services_icons/product_icon.png"
+                            class="card-img-top" alt="Product Management">
+                        <div class="card-body">
+                            <h6 class="card-title"><button id="show_hide">PRODUCT MANAGEMENT</button></h6>
+                            <div id="toggle_3"><p class="card-text">Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This
+                                    iterative process allows for changes as business requirements evolve.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">What We Do</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
     <!-- End of What We Do Area-->
 
     <!--Portfolio Area-->
     <section class="portfolio-area">
         <div class="container">
-            <div class="row">
+            <div class="row-portfolio">
                 <div class="col-lg-12 text-center portfolio-title">
                     <h5 class="title-text text-uppercase title-text pt-5">Portfolio</h5>
                 </div>
@@ -169,44 +187,44 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work1.jpg" alt="Work-1">
+                            <img src="./assets/img/portfolio/work1.jpg" style="width: 12rem" alt="Work-1">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work2.jpg" alt="Work-2">
+                            <img src="./assets/img/portfolio/work2.jpg" style="width: 12rem" alt="Work-2">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work3.jpg" alt="Work-3">
+                            <img src="./assets/img/portfolio/work3.jpg" style="width: 12rem" alt="Work-3">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work4.jpg" alt="Work-4">
+                            <img src="./assets/img/portfolio/work4.jpg" style="width: 12rem" alt="Work-4">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work5.jpg" alt="Work-5">
+                            <img src="./assets/img/portfolio/work5.jpg" style="width: 12rem" alt="Work-5">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work6.jpg" alt="Work-6">
+                            <img src="./assets/img/portfolio/work6.jpg" style="width: 12rem" alt="Work-6">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work7.jpg" alt="Work-7">
+                            <img src="./assets/img/portfolio/work7.jpg" style="width: 12rem" alt="Work-7">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="portfolio">
-                            <img src="./assets/img/portfolio/work8.jpg" alt="Work-8">
+                            <img src="./assets/img/portfolio/work8.jpg" style="width: 12rem" alt="Work-8">
                         </div>
                     </div>
                 </div>
@@ -216,19 +234,20 @@
     <!--End Portfolio Area-->
     <!--Start Contact form Area-->
     <section class="contact-us">
-        <div class="contactForm">
+        <div class="contactForm" id="contact-form">
             <div class="container">
                 <h6 class="title-text text-uppercase text-center">contact us</h6>
                 <div class="row">
                     <div class="mb-3">
                         <form class="row g-2 needs-validation">
                             <div class="col-md-6">
-                            <input type="name" class="form-control" id="FormControlInputValidation01"" placeholder="Name.." required>
-                            <div class="valid-feedback">Looks good!</div>
+                                <input type="name" class="form-control" id="FormControlInputValidation01"" placeholder="Name.." required>
+                                <div class="valid-feedback">Looks good!</div>
                             </div>
                             <div class="col-md-6">
-                            <input type="email" class="form-control" id="FormControlInputValidation02" placeholder="Email.." required>
-                            <div class="invalid-feedback">Please provide a valid Email</div>
+                                <input type="email" class="form-control" id="FormControlInputValidation02"
+                                    placeholder="Email.." required>
+                                <div class="invalid-feedback">Please provide a valid Email</div>
                             </div>
                         </form>
                     </div>
@@ -237,21 +256,23 @@
                     <div class="mb-3">
                         <form class="textarea needs-validation">
                             <label for="FormControlTextarea" class="form-label"></label>
-                            <textarea class="form-control" id="FormControlInputValidationTextarea" rows="3" placeholder="Your Message here...." required></textarea>
-                            <div class="invalid-feedback">Additional Information</div>
+                            <textarea class="form-control" id="FormControlInputValidationTextarea" rows="3"
+                                placeholder="Your Message here...." required></textarea>
+                            <div class="invalid-feedback">Please provide additional information</div>
                             <div class="col-12">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                  <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
-                                  <div class="invalid-feedback">You must agree before submitting.</div>
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">Agree to terms and
+                                        conditions</label>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                <button class="btn btn-primary" type="submit" onclick="alert('Hey, we have received your message. Thank you for reaching out to us!')">Submit form</button>
                             </div>
                         </form>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
@@ -259,13 +280,13 @@
     <!--jquery js file-->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
-          $("#show_hide").click(function () {
-          $("#toggle_1,#toggle_2,#toggle_3").toggle({
-              duration:1500,
-          });
-       });
-       });
+        $(document).ready(function () {
+            $("#show_hide").click(function () {
+                $("#toggle_1,#toggle_2,#toggle_3").toggle({
+                    duration: 1500,easing in
+                });
+            });
+        });
     </script>
     <!--js file-->
     <script src="script.js"></script>
@@ -287,4 +308,5 @@
         </div>
     </section>
 </body>
+
 </html>
