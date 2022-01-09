@@ -72,6 +72,7 @@ img{
 .navbar a{
     display: flex;
     color: #04AA6D;
+    position: relative;
     padding: 10px;
     margin: 0 4px;
     width: 120px;
@@ -115,21 +116,24 @@ img{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 .card{
     border-radius: 10px;
     box-shadow: 3px 10px rgba(0,100,230, 0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-    margin-bottom: 5rem;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
 }
+@media screen and (max-width: 768px) {
+    .col-sm-4,col-lg-3 {
+      width: 100%;
+    }
+  }
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -141,6 +145,18 @@ img{
 }
 .btn:hover{
     transform: scale(0.90);
+}
+.portfolio {
+display: inline-block;
+padding: 10px 30px;
+cursor: pointer;
+background: white;
+color: steelblue;
+border: none;
+border-radius: 5px;
+}
+.portfolio:hover{
+    transform: scale(0.90);  
 }
 .contactForm{
     position: relative;
@@ -175,13 +191,17 @@ img{
     padding: 3px;
     font-size: 16px;
 }
+.contactForm{
+    justify-self: center;
+    margin:auto;
+}
 @media screen and (max-width:1024px) {
     .nav-links{
         width:60%
     }
 }
 @media screen and (max-width:768px){
-    .nav-links{
+    .nav-link{
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -194,7 +214,7 @@ img{
         transform: translateX(100%);
         transition: transform(o.5s ease);
     }
-    .nav-links li{
+    .nav-link li{
         opacity: 0;
     }
 }
@@ -211,6 +231,15 @@ img{
         transform:translateX(0px);
     }
 }
+.toggle .line1{
+    transform:rotate(-45deg translate(-5px,6px));
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg translate(-5px,-6px));
+}
 .menu{
     display: block;
 }
@@ -220,24 +249,15 @@ img{
         overflow-x:hidden;
     }
 }
-.split{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px;
-}
-.contactForm{
-    justify-self: center;
-    margin:auto;
-}
 /* mobile*/
 @media (max-width: 300px){
     .navbar{
         height:110px;
     }
-.navbar .flex{
+    .navbar .flex{
     flex-direction: column;
-}
-.navbar ul{
+    }
+    .navbar ul{
     padding: 10px;
     background-color: rgba(0,0,245,0.1);
 }
