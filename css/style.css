@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 h1,h2{
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
     margin-bottom: 1em;
@@ -44,6 +44,7 @@ text-center{
 }
 .menu{
     display: none;
+    cursor: pointer;
 }
 section{
     padding: 3rem 0;
@@ -59,18 +60,18 @@ img{
     justify-content:space-around;
     min-height: 8vh;
 }
-.logo{
+.navbar{
     color: steelblue;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 22px;
+    letter-spacing: 2px;
+    font-size: 14px;
 }
 .navbar ul{
     display: flex; 
 }
 .navbar a{
     display: flex;
-    color: steelblue;
+    color: #04AA6D;
     padding: 10px;
     margin: 0 4px;
     width: 120px;
@@ -78,23 +79,30 @@ img{
     align-items: center;
     text-decoration: none;
 }
+.active {
+    background-color: #30755c;
+  }
 .navbar a:hover{
-    border-bottom: 2px solid steelblue;
+    border-bottom: 2px solid #04AA6D;
     transition:all 0.4s ease;
 }
 #navbarNav{
-    justify-content: space-between;
+    justify-content:flex-end;
+    font-weight: bold;
 }
 .container{
     max-width: 1300px;
     width: min(90%, 75rem);
-    margin: 0 auto;
+    margin: 10px auto;
     overflow: auto;
     padding: 0 40px;
 }
 .container--narrow{
-    max-width: 30rem;
+    max-width: 20rem;
+    margin: 20px auto;
     justify-content: center;
+    align-items: center;
+    color: whitesmoke;
 }
 .flex{
     display: flex;
@@ -111,7 +119,7 @@ img{
     justify-content: center;
     align-items: center;
     height: 100%;
-
+}
 .card{
     border-radius: 10px;
     box-shadow: 3px 10px rgba(0,100,230, 0.5);
@@ -134,7 +142,6 @@ img{
 .btn:hover{
     transform: scale(0.90);
 }
-
 .contactForm{
     position: relative;
     top: 60px;
@@ -180,29 +187,43 @@ img{
         height: 92vh;
         top: 8vh;
         background-color: steelblue;
-
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform(o.5s ease);
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinksFade {
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
+.menu{
+    display: block;
+}
 @media screen and (max-width:768px){
     body{
         display: none;
+        overflow-x:hidden;
     }
-        display: flex;
-    }
-
-}
-/*Tablets and under*/
-@media(max-width:768px){
-    .grid,
-    .contactForm .grid,
-    flex-direction:row;
-    grid-template-columns:1fr;
-    grid-template-rows: 1fr;
-    flex-basis: 100%;
 }
 .split{
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 .contactForm{
     justify-self: center;
