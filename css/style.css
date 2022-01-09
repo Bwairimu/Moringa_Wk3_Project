@@ -1,125 +1,233 @@
 /* Import from font.css file*/
-@import url(fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Dosis';
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 10px 0;
+    margin-bottom: 1em;
+}
+h3,h4,h5,h6{
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+p{
+    margin: 10px 0;
+}
+text-center{
+    text-align: center;
+    margin-top: 40px;
+}
+.menu div{
+    width: 25px;
+    height: 3px;
+    background-color: steelblue;
+    margin: 5px;
+}
+.menu{
+    display: none;
+}
+section{
+    padding: 3rem 0;
+}
+img{
+    max-width:100%;
+}
+.navbar{
+    color: whitesmoke;
+    height: 70px;
+    background-color: slategrey;
+    text-align: center;
+    justify-content:space-around;
+    min-height: 8vh;
+}
+.logo{
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+.navbar ul{
+    display: flex; 
+}
+.navbar a{
+    display: flex;
+    color: steelblue;
+    padding: 10px;
+    margin: 0 4px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar a:hover{
+    border-bottom: 2px solid steelblue;
+    transition:all 0.4s ease;
+}
+#navbarNav{
+    justify-content: space-between;
+}
+.container{
+    max-width: 1300px;
+    width: min(90%, 75rem);
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.container--narrow{
+    max-width: 30rem;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.col-sm-4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
-.header-area .main-menu .navbar .navbar-brand {
-    padding: 0 5rem 0 5rem;
-}
-.header-area .main-menu .navbar{
-    padding:1rem 2rem;
-}
-.header-area .main-menu .nav-item .nav-link{
-    font:normal 200 8px/2px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    padding: 1rem;
-    color: whitesmoke;
-}
-.header-area .main-menu .navbar-nav .active a {
-    background:#a52a2a;
+.card{
+    border-radius: 10px;
+    box-shadow: 3px 10px rgba(0,100,230, 0.5);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.header-area .main-menu .navbar-nav a:hover {
-    background:#fb4f14;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-/*Banner Area*/
-.site-banner .site-title{
- background:url('./assets/img/backgrounds/h_img.jpg');
- background-repeat:no-repeat;
-}
-.site-banner .site-title h1{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: 40;
-    color: whitesmoke;
-    font-size: 5rem;
-    text-transform: uppercase;
-}
- .site-banner .site-title h2{
-    content: '';
-    padding: 5px 10px;
-    height: 2px;
-    display: inline;
-    font-size: 1rem;
-    color: whitesmoke;
-    text-align: center;
-}
-.title-text {
-    font:normal bold 50px/72px;
-    color: #fb4f14;
-    text-align: center;
-    letter-spacing: 3px;
-}
-.about-area {
-    padding: 3rem 3rem;
-}
-.about-area .about-title .title-text.paragraph1{
-    font: normal bold 49px/60px;
-    letter-spacing: 2px;
-    color: #000014 ;
-    text-align: center;
-}
-.about-area .about-title .paragraph1{
-    padding: 2rem 0;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #000014;
-}
-.services-area .paragraph2{
-    margin-top: 0.25em;
-    padding: 2rem 0;
-    letter-spacing: 2px;
-    text-align: center;
-    color: whitesmoke;
-}
-.whatWeDo-area{
-    padding: 2rem 2rem;
+    -moz-text-fill-color:transparent;
     margin-bottom: 5rem;
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform:inherit;
-    overflow: hidden;
-    display: inline;
+    width: 100%;
 }
-#toggle_1 #toggle_2 #toggle_3{
-    width:250px;
-    height:250px;
-    border: solid 1px grey;
-    background:#fff;
-    margin:20px;
-}
-h2.h3 .h4 .h5 {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin:0 0 2px;
-}
-.whatWeDo-area .card-img-top .col-sm-4{
-    box-shadow: grey;
-    filter: brightness(0.05);
-}
-.portfolio-area .first-row .col-lg-3 {
-    border:1px solid grey;
-    text-align: center;
-    padding: 1rem 1rem;
-    margin: 20px 20px 10px 20px;
-    width: 10%;
-    height: 25px;
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
     cursor: pointer;
-    transition: transform.4s ease;
+    background: white;
+    color: steelblue;
+    border: none;
+    border-radius: 5px;
 }
-.portfolio-area .row .col-lg-3:hover{
-    transform: scale(1.1);
-    border-color:grey;
+.btn:hover{
+    transform: scale(0.90);
 }
-.portfolio-area .row .col-lg-3:hover>img{
-    filter: brightness(0.15);
+
+.contactForm{
+    position: relative;
+    top: 60px;
+    bottom: 60px;
+    height:auto;
+    width: fit-content;
+    padding: 40px;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
 }
-.footer-area .footer-list{
-    padding-top: 5px;
-    padding-bottom: 2px;
-    display: inline;
+.contactForm form-control{
+    margin: 30px 0;
+}
+.contactForm input[type='text'],
+.contactForm input[type='email']{
+    border: 0;
+    border-bottom: 1px solid steelblue;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.contactForm::before,
+.contactForm::after{
+    content: '';
+    position:absolute;
+}
+.contactForm input{
+    border: 0;
+    border-bottom: 1px solid steelblue;
+    padding: 3px;
+    font-size: 16px;
+}
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width:60%
+    }
+}
+@media screen and (max-width:768px){
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: steelblue;
+
+
+@media screen and (max-width:768px){
+    body{
+        display: none;
+    }
+        display: flex;
+    }
+
+}
+/*Tablets and under*/
+@media(max-width:768px){
+    .grid,
+    .contactForm .grid,
+    flex-direction:row;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    flex-basis: 100%;
+}
+.split{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.contactForm{
+    justify-self: center;
+    margin:auto;
+}
+/* mobile*/
+@media (max-width: 300px){
+    .navbar{
+        height:110px;
+    }
+.navbar .flex{
+    flex-direction: column;
+}
+.navbar ul{
+    padding: 10px;
+    background-color: rgba(0,0,245,0.1);
+}
+@media (min-width:40em){
+    .split{
+        flex-direction: row;
+    }
+    .split > * {
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 2em;
+    }
 }
