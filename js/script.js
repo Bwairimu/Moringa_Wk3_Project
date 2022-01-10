@@ -3,17 +3,17 @@ const navSlide= () => {
   const nav=document.querySelector('.nav-link');
   const navLinks=document.querySelectorAll('.nav-link li');
 
-  menu.addEventListener('click',function() ) => {
+  menu.addEventListener('click',() => {
       //Toggle nav
-    nav.classList.toggle( '.nav-active');
+    nav.classList.toggle('.nav-active');
     //animate
-    navLinks.forEach(link,index) => {
+    navLinks.forEach(link, index); {
       if(link.style.animation) {
         link.style.animation='';
       } else {
         link.style.animation='navLinkFade 0.5s ease forwards';
       }
-    });
+    };
     menu.classList.toggle('toggle');
   });
 }
@@ -29,7 +29,7 @@ $(document).ready(function(){
     'use strict'
     var Forms = document.querySelectorAll('.needs-validation')
     // Loop over them and prevent submission
-    Array.prototype.slice.callform)
+    Array.prototype.slice.(callform)
       .forEach(function (form) {
         form.addEventListener('submit', function (event) {
           if (!form.checkValidity()) {
@@ -39,4 +39,5 @@ $(document).ready(function(){
           form.classList.add('was-validated')
         }, false)
       })
+      
   })()
