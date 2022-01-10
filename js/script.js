@@ -3,7 +3,7 @@ const navSlide= () => {
   const nav=document.querySelector('.nav-link');
   const navLinks=document.querySelectorAll('.nav-link li');
 
-  menu.addEventListener('click',() => {
+  menu.addEventListener('click', )=> {
       //Toggle nav
     nav.classList.toggle( '.nav-active');
     //animate
@@ -14,10 +14,16 @@ const navSlide= () => {
         link.style.animation='navLinkFade 0.5s ease forwards';
       }
     });
+    menu.classList.toggle('toggle');
   });
 }
 navSlide();
 
+$(document).ready(function(){
+  $(".card").on("click", function(){
+    $('p').hide();
+  });
+});
 
 (function () {
     'use strict'
