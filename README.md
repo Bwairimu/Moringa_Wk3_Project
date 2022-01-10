@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # DELANI STUDIO.
-#### MoringaSchool_Project, December,2021
+#### MoringaSchool_Project, Moringa_Wk3_Project, December,2021
 #### By **Basilia Wairimu**
 ## Description
 IP3
@@ -16,6 +16,5 @@ Javascript
 JQuery
 ### License
 Copyright (c) 2021 **Basilia Wairimu**
-=======
-# Moringa_Wk3_Project
->>>>>>> f5d88952544595458279734136de802a12e30de7
+
+
