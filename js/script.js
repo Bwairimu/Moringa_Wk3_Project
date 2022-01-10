@@ -3,7 +3,7 @@ const navSlide= () => {
   const nav=document.querySelector('.nav-link');
   const navLinks=document.querySelectorAll('.nav-link li');
 
-  menu.addEventListener('click', )=> {
+  menu.addEventListener('click',function() ) => {
       //Toggle nav
     nav.classList.toggle( '.nav-active');
     //animate
