@@ -33,10 +33,10 @@ p{
     margin: 10px 0;
     color: #0d5037;
     text-align: center;
+    font-weight: bold;
 }
 p.paragraph2{
     color: white;
-    font-weight: bold;
 }
 text-center{
     text-align: center;
@@ -124,6 +124,13 @@ img{
     cursor: pointer;
     margin:18px 10px 40px;
 }
+.card-img-top{
+    max-width: 30%;
+    margin: 5px 120px;
+    padding: 10px;
+    justify-content: center;
+    position: relative;
+}
 .card h5{
     font-size: 18px;
     margin-bottom: 10px;
@@ -152,47 +159,63 @@ img{
     transition:all 0.4s ease;
 }
 .portfolio {
-display: flex;
-position: relative;
-padding: 10px 30px;
-cursor: pointer;
-background: white;
-color: steelblue;
-border: none;
-border-radius: 5px;
+    display:flex;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: white;
+    color: steelblue;
+    border: none;
+    border-radius: 5px;
 }
-.portfolio:hover{
-    transform: scale(0.90); 
-    transition: all 0.4s ease; 
-}
-.portfolio .flex {
+.container .col-lg-3 .flex {
     flex-wrap: wrap;
 }
-.portfolio .image_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.img {
+    opacity: 1;
+    display: block;
     width: 100%;
-    height: 100%;
-    background-color: white;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0;
-
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
-
+.col-lg-3:hover{
+    transform: scaleY(0.90);
+    transition:all 0.4s ease;
+}
+.container .col-lg-3 .middle{
+transition:0.5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+cursor: pointer;
+transform: translateY(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+.portfolio:hover .img {
+opacity: 0.3;
+}
+.portfolio:hover .middle {
+opacity: 1;
+}
+.portfolio .text {
+background-color: white;
+color: slategrey;
+font-size: 16px;
+padding: 16px 32px;
+}
 .contactForm{
-    position: relative;
-    top: 60px;
-    bottom: 60px;
-    height:auto;
-    width: fit-content;
-    padding: 40px;
-    z-index: 100;
-    align-items: center;
-    justify-content: center;
+position: relative;
+top: 60px;
+bottom: 60px;
+height:auto;
+width: fit-content;
+padding: 40px;
+z-index: 100;
+align-items: center;
+justify-content: center;
 }
 .contactForm form-control{
     margin: 30px 0;
@@ -227,17 +250,17 @@ border-radius: 5px;
 }
 @media screen and (max-width:768px){
     .nav-link{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: steelblue;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform(o.5s ease);
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform(o.5s ease);
     }
     .nav-link li{
         opacity: 0;

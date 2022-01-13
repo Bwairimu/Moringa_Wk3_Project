@@ -20,8 +20,9 @@ const navSlide= () => {
 navSlide();
 
 $(document).ready(function(){
-  $(".card").on("click", function(){
-    $('p').hide();
+  $(".card").on("click",function(){
+    $(".p-showing").toggle();
+    $(".p-hidden").toggle();
   });
 });
 
@@ -29,8 +30,8 @@ $(document).ready(function(){
     'use strict'
     var Forms = document.querySelectorAll('.needs-validation')
     // Loop over them and prevent submission
-    Array.prototype.slice.(callform)
-      .forEach(function (form) {
+    Array.prototype.slice.(callform);
+      .forEach(function (Forms) {
         form.addEventListener('submit', function (event) {
           if (!form.checkValidity()) {
             event.preventDefault()
@@ -39,5 +40,6 @@ $(document).ready(function(){
           form.classList.add('was-validated')
         }, false)
       })
-      
+
   })()
+
