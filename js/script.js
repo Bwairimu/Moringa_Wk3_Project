@@ -7,8 +7,8 @@ const navSlide= () => {
       //Toggle nav
     nav.classList.toggle('.nav-active');
     //animate
-    navLinks.forEach(link, index); {
-      if(link.style.animation) {
+    navLinks.forEach(nav-link, index); {
+    if(link.style.animation) {
         link.style.animation='';
       } else {
         link.style.animation='navLinkFade 0.5s ease forwards';
@@ -19,27 +19,11 @@ const navSlide= () => {
 }
 navSlide();
 
-$(document).ready(function(){
-  $(".card").on("click",function(){
-    $(".p-showing").toggle();
-    $(".p-hidden").toggle();
-  });
+$(document).ready(function () {
+    $("#show_hide").click(function () {
+        $("#toggle_2,#toggle_1,#toggle_3").toggle({
+            duration: 1500
+        });
+    });
 });
-
-(function () {
-    'use strict'
-    var Forms = document.querySelectorAll('.needs-validation')
-    // Loop over them and prevent submission
-    Array.prototype.slice.(callform);
-      .forEach(function (Forms) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-          form.classList.add('was-validated')
-        }, false)
-      })
-
-  })()
 

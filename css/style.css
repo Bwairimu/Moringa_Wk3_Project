@@ -19,15 +19,18 @@ a{
     text-decoration: none;
 }
 h1,h2{
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.2;
     margin: 10px 0;
     margin-bottom: 1em;
 }
-h3,h4,h5,h6{
+h3,h4,h5{
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 1em;
+}
+h6{
+    font-weight:bold;
 }
 p{
     margin: 10px 0;
@@ -116,13 +119,13 @@ img{
     flex-wrap: wrap;
 }
 .card{
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 3px 10px rgba(80,200,130, 0.5);
     max-width: 100%;
     text-align: center;
     justify-content: center;
     cursor: pointer;
-    margin:18px 10px 40px;
+    margin:10px 10px;
 }
 .card-img-top{
     max-width: 30%;
@@ -133,7 +136,7 @@ img{
 }
 .card h5{
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 .card:hover{
@@ -170,7 +173,6 @@ img{
 .container .col-lg-3 .flex {
     flex-wrap: wrap;
 }
-
 .img {
     opacity: 1;
     display: block;
@@ -194,7 +196,7 @@ transform: translateY(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 text-align: center;
 }
-.portfolio:hover .img {
+.portfolio:hover .overlay {
 opacity: 0.3;
 }
 .portfolio:hover .middle {
@@ -269,7 +271,7 @@ justify-content: center;
 .nav-active{
     transform: translateX(0%);
 }
-@keyframes navLinksFade {
+@keyframes nav-linksFade {
     from{
         opacity: 0;
         transform:translateX(50px);
