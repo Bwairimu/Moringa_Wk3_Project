@@ -124,10 +124,8 @@ img{
     padding: 20px;
     cursor: pointer;
 }
-@media screen and (max-width: 992px) {
-    . {
-      flex: 50%;
-    }
+.toggle{
+    display: none;
 }
 .col:hover{
     transform: translateY(-15px);

@@ -1,28 +1,6 @@
-const navSlide = () => {
-  const menu = document.querySelector('.menu');
-  const nav = document.querySelector('.nav-link');
-  const navLinks = document.querySelectorAll('.nav-link li');
-
-  menu.addEventListener('click', () => {
-    //Toggle nav
-    nav.classList.toggle('.nav-active');
-    //animate
-    navLinks.forEach(nav-link, index); {
-      if (link.style.animation) {
-        link.style.animation = '';
-      } else {
-        link.style.animation = 'navLinkFade 0.5s ease forwards';
-      }
-    };
-    menu.classList.toggle('toggle');
-  });
-}
-navSlide();
-
 $(document).ready(function () {
-  $("#p_show_hide").click(function () {
-    $("#toggle1,#toggle2,#toggle3").toggle({
-      duration: 1500
-    });
+  $(".toggle").click(function (){
+    $(this).next().toggle();
+    $(this).next().next().toggle();
   });
 });
