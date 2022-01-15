@@ -1,16 +1,15 @@
 /* Import from font.css file*/
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 * {
-    box-sizing: border-box;
-    padding: 0;
+    padding:0;
     margin:0;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 body{
     font-family:'Dosis';
     line-height: 1.2;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 ul{
     list-style-type: none;
@@ -24,28 +23,29 @@ h1,h2{
     margin: 10px 0;
     margin-bottom: 1em;
 }
-h3,h4,h5{
+h3{
+    font-size: 0.7rem;
+}
+h4,h5{
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 1em;
 }
-h6{
-    font-weight:bold;
-}
 p{
     margin: 10px 0;
-    color: #0d5037;
+    color: #000;
     text-align: center;
-    font-weight: bold;
+    font-weight:500;
 }
 p.paragraph2{
     color: white;
 }
 text-center{
     text-align: center;
-    margin-top: 40px;
-    font-weight: 700;
+    margin: 40px;
+    font-weight: 400;
 }
+
 .menu div{
     width: 25px;
     height: 3px;
@@ -115,37 +115,32 @@ img{
     align-items: center;
     color: whitesmoke;
 }
-.card .flex {
+.whatWeDo-area .row {
+    display: flex;
     flex-wrap: wrap;
 }
-.card{
-    border-radius: 5px;
-    box-shadow: 3px 10px rgba(80,200,130, 0.5);
-    max-width: 100%;
-    text-align: center;
-    justify-content: center;
+.whatWeDo-area .col {
+    flex: 33%;
+    padding: 20px;
     cursor: pointer;
-    margin:10px 10px;
 }
-.card-img-top{
-    max-width: 30%;
-    margin: 5px 120px;
-    padding: 10px;
-    justify-content: center;
-    position: relative;
+@media screen and (max-width: 992px) {
+    . {
+      flex: 50%;
+    }
 }
-.card h5{
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-.card:hover{
+.col:hover{
     transform: translateY(-15px);
     transition:all 0.6s ease;
 }
 @media screen and (max-width: 768px) {
     .col-sm-4,col-lg-3 {
       width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
     }
   }
 .btn{
@@ -161,25 +156,19 @@ img{
     transform: scale(0.90);
     transition:all 0.4s ease;
 }
-.portfolio {
+.portfolio-area .row {
+    box-sizing: border-box;
     display:flex;
-    padding: 10px 30px;
+    flex-wrap: wrap;
     cursor: pointer;
-    background: white;
-    color: steelblue;
+    color: #000;
     border: none;
     border-radius: 5px;
 }
-.container .col-lg-3 .flex {
-    flex-wrap: wrap;
-}
-.img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+.portfolio-area .col{
+    flex: 25%;
+    padding: 2px;
+    cursor: pointer;
 }
 .col-lg-3:hover{
     transform: scaleY(0.90);
@@ -195,9 +184,6 @@ cursor: pointer;
 transform: translateY(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 text-align: center;
-}
-.portfolio:hover .overlay {
-opacity: 0.3;
 }
 .portfolio:hover .middle {
 opacity: 1;
@@ -271,6 +257,19 @@ justify-content: center;
 .nav-active{
     transform: translateX(0%);
 }
+/* mobile*/
+@media (max-width: 300px){
+    .navbar{
+        height:110px;
+    }
+    .navbar .flex{
+    flex-direction: column;
+    }
+    .navbar ul{
+    padding: 10px;
+    background-color: rgba(0,0,245,0.1);
+    }
+}
 @keyframes nav-linksFade {
     from{
         opacity: 0;
@@ -281,6 +280,7 @@ justify-content: center;
         transform:translateX(0px);
     }
 }
+
 .toggle .line1{
     transform:rotate(-45deg translate(-5px,6px));
 }
@@ -306,18 +306,5 @@ justify-content: center;
     }
     .split > * + * {
         margin-left: 2em;
-    }
-}
-/* mobile*/
-@media (max-width: 300px){
-    .navbar{
-        height:110px;
-    }
-    .navbar .flex{
-    flex-direction: column;
-    }
-    .navbar ul{
-    padding: 10px;
-    background-color: rgba(0,0,245,0.1);
     }
 }

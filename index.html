@@ -85,8 +85,11 @@
                         <div>Welcome</div>
                         <div>to Delani Studio.</div>
                     </h1>
-                    <h6 class="text-center text-uppercase"><span> Amazing people are making amazing designs in
-                            a fun environment. </span></h6>
+                    <h3 class="text-center text-uppercase">Amazing people are making amazing designs in
+                        a fun environment.</h3>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img class="img-fluid " src="./assets/img/mouse_click.png" alt="Mouse click">
                 </div>
             </div>
         </div>
@@ -96,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg col-md-12 about-title">
-                    <h3 class="text-center text-uppercase">About us</h3>
+                    <h2 class="text-center text-uppercase">About us</h2>
                     <p class="paragraph1">
                         When you work with us, you are part of a team of committed collaborators. All aspects of our
                         software development process are integrated, interactive and agile.<br>
@@ -117,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <h3 class="text-center text-uppercase">Services</h3>
+                    <h2 class="text-center text-uppercase">Services</h2>
                     <p class="paragraph2">
                         Before we sign a contract or write a line of code our team will spend the necessary time needed
                         to understand your product vision.<br>
@@ -132,60 +135,30 @@
 
     <!--Start What We Do Area-->
     <section class="whatWeDo-area">
-        <div class="container-fluid">
+        <div class="container-fluid mt-3">
             <div class="row">
-                <h3 class="text-center text-uppercase">What We Do</h3>
-                <div class="col-sm-4">
-                    <!--wrapper-->
-                    <div class="card">
-                        <h5 class="card-title text-uppercase">Development</h5>
-                        <img src="./assets/img/services_icons/dev_icon.png" class="card-img-top"
-                            alt="Development">
-                        <div class="card-body">
-                            <button id="show_hide">Click Me!</button>
-                            <div id="toggle_2">
-                                <p class="card-text">All engineers are fluent in the latest
-                                    enterprise, mobile and web development technologies. They collaborate with your
-                                    team to write, and improve code on a daily basis, using proven practices such as
-                                    test-driven development and pair programming.</p>
-                            </div>
-                            <a href="#" class="btn btn-secondary">What We Do</a>
-                        </div>
-                    </div>
+                <div class="col pt-4" id="toggle1"><img src="./assets/img/services_icons/design_icon.png" alt="design">
+                    <h4 class="text-uppercase"><small>design</small></h4>
+                    <button id="show_hide"></button>O
+                    <p id="#p_show_hide">Our design practice offers a full range of services including brand strategy, interaction and visual design and user
+                        experience testing. Throughout your project, our designers create and implement
+                        visual design and workflows, solicit user feedback and work with you to make sure
+                        what gets built is what is needed.</p>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <h5 class="card-title text-uppercase">Design</h5>
-                        <img src="./assets/img/services_icons/design_icon.png" class="card-img-top"
-                            alt="Design">
-                        <div class="card-body">
-                           <button id="show_hide"></button>
-                            <div id="toggle_1">
-                                <p class="card-text">Our design practice offers a full range
-                                    of services including brand strategy, interaction and visual design and user
-                                    experience testing. Throughout your project, our designers create and implement
-                                    visual design and workflows, solicit user feedback and work with you to make sure
-                                    what gets built is what is needed.</p>
-                            </div>
-                            <a href="#" class="btn btn-secondary">What We do</a>
-                        </div>
-                    </div>
+                <div class=" col pt-4" id="toggle2"><img src="./assets/img/services_icons/dev_icon.png"
+                            alt="development">
+                    <h4 class="text-uppercase"><small>development</small></h4>
+                    <p id="#p_show_hide">All engineers are fluent in the latest
+                        enterprise, mobile and web development technologies. They collaborate with your
+                        team to write, and improve code on a daily basis, using proven practices such as
+                        test-driven development and pair programming.</p>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <h5 class="card-title text-uppercase">Product Management</h5>
-                        <img src="./assets/img/services_icons/product_icon.png" class="card-img-top"
-                            alt="Product Management">
-                        <div class="card-body">
-                            <button id="show_hide"></button>
-                            <div id="toggle_3">
-                                <p class="card-text">Planning and development is iterative. Because we are constantly
-                                    coding and testing, the products we build are always ready to go live. This
-                                    iterative process allows for changes as business requirements evolve.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-secondary">What We Do</a>
-                    </div>
+                <div class="col pt-4" id="toggle3"><img src="./assets/img/services_icons/product_icon.png"
+                        alt="Product Management">
+                    <h4 class="text-uppercase"><small>product management</small></h4>
+                    <p id="#p_show_hide">Planning and development is iterative. Because we are constantly
+                        coding and testing, the products we build are always ready to go live. This
+                        iterative process allows for changes as business requirements evolve.</p>
                 </div>
             </div>
         </div>
@@ -194,62 +167,46 @@
 
     <!--Start Portfolio Area-->
     <section class="portfolio-area">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center portfolio-title">
-                    <h5 class="title-text text-uppercase title-text pt-5">Portfolio</h5>
+                <div class="pt-5 text-center portfolio-title">
+                    <h5 class="title-text text-uppercase title-text">Portfolio</h5>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <img src="./assets/img/portfolio/work1.jpg" alt="Work-1">
-                    <div class="overlay">
+                <div class="d-inline-flex flex-row flex-wrap">
+                    <div class="col-lg-3 col-sm-3 p-2">
+                        <img class="img-fluid" src="./assets/img/portfolio/work1.jpg" alt="Work-1">
                         <div class="text">portfolio</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <img src="./assets/img/portfolio/work2.jpg" alt="Work-2">
-                    <div class="overlay">
+                    <div class="col-lg-3 col-sm-3 p-2">
+                        <img class="img-fluid" src="./assets/img/portfolio/work2.jpg" alt="Work-2">
                         <div class="text">portfolio</div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <img src="./assets/img/portfolio/work3.jpg" alt="Work-3">
-                    <div class="overlay">
-                        <div class="text">portfolio</div>
+                    <div class="col-lg-3 col-sm-3 p-2">
+                        <img class="img-fluid" src="./assets/img/portfolio/work3.jpg" alt="Work-3">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <img src="./assets/img/portfolio/work4.jpg" alt="Work-4">
-                    <div class="overlay">
-                        <div class="text">portfolio</div>
+                    <div class="col-lg-3 col-sm-3 p-2">
+                        <img class="img-fluid" src="./assets/img/portfolio/work4.jpg" alt="Work-4">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./assets/img/portfolio/work5.jpg" alt="Work-5">
-                    <div class="overlay">
-                        <div class="text">portfolio</div>
-                    </div>
+                <div class="col-lg-3 col-sm-3">
+                    <img class="img-fluid" src="./assets/img/portfolio/work5.jpg" alt="Work-5">
+                    <div class="text">portfolio</div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <img src="./assets/img/portfolio/work6.jpg" alt="Work-6">
-                    <div class="overlay">
-                        <div class="text">portfolio</div>
-                    </div>
+                <div class="col-lg-3 col-sm-3">
+                    <img class="img-fluid" src="./assets/img/portfolio/work6.jpg" alt="Work-6">
+                    <div class="text">portfolio</div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <img src="./assets/img/portfolio/work7.jpg" alt="Work-7">
-                    <div class="overlay">
+                <div class="col-lg-3  col-sm-3">
+                    <img class="img-fluid" src="./assets/img/portfolio/work7.jpg" alt="Work-7">
                         <div class="text">portfolio</div>
-                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <img src="./assets/img/portfolio/work8.jpg" alt="Work-8">
-                    <div class="overlay">
-                        <div class="text">portfolio</div>
-                    </div>
-                </div
-            </div>
+                <div class="col-lg-3  col-sm-3">
+                    <img class="img-fluid" src="./assets/img/portfolio/work8.jpg" alt="Work-8">
+                    <div class="text">portfolio</div>
+                </div>
+            </div 
         </div>
     </section>
     <!--End Portfolio Area-->
@@ -258,19 +215,20 @@
     <section class="contact-us">
         <div class="contactForm" id="contact-form">
             <div class="container">
-                <h6 class="title-text text-uppercase text-center">contact us</h6>
+                <h5 class="title-text text-uppercase text-center">contact us</h5>
                 <div class="row">
                     <div class="mb-3">
                         <form class="row g-2 needs-validation">
                             <div class="col-md-6">
                                 <label for="name" class="form-label"></label>
-                                <input type="name" class="form-control" id="InputValidation01" placeholder="Name.." required>
+                                <input type="name" class="form-control" id="InputValidation01" placeholder="Name.."
+                                    required>
                                 <div class="valid-feedback">Looks good!</div>
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label"></label>
-                                <input type="email" class="form-control" id="InputValidation02"
-                                    placeholder="Email.." required>
+                                <input type="email" class="form-control" id="InputValidation02" placeholder="Email.."
+                                    required>
                                 <div class="invalid-feedback">Please provide a valid Email</div>
                             </div>
                         </form>
@@ -303,19 +261,11 @@
         </div>
     </section>
     <!--End Contact form Area-->
-    
+
     <!--jquery js file-->
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function () {
-        $("#show_hide").click(function () {
-            $("#toggle_1,#toggle_2,#toggle_3").toggle({
-                duration: 1500
-            });
-        });
-    });
-    </script>
-   
+
+
     <!--js file-->
     <script src="./js/script.js"></script>
     <section class="footer-area">
@@ -336,4 +286,5 @@
         </div>
     </section>
 </body>
+
 </html>
