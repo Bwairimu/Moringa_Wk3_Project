@@ -124,8 +124,11 @@ img{
     padding: 20px;
     cursor: pointer;
 }
-.toggle{
+#show_hide, #show_hide1, #show_hide2 {
     display: none;
+}
+.portfolio-text{
+    display:none
 }
 .col:hover{
     transform: translateY(-15px);
