@@ -124,7 +124,7 @@ img{
     padding: 20px;
     cursor: pointer;
 }
-#show_hide, #show_hide1, #show_hide2 {
+.hidden{
     display: none;
 }
 .portfolio-text{
