@@ -101,6 +101,18 @@ img{
     justify-content:flex-end;
     font-weight: bold;
 }
+.main {
+    background-image: url('../assets/img/backgrounds/h_img.jpg');
+    background-size: cover;
+}
+.services-area {
+    background-image: url('../assets/img/backgrounds/s_image.jpg');
+    background-size: cover;
+}
+.contact-us {
+    background-image: url('../assets/img/backgrounds/c_image.jpg');
+    background-size: cover;
+}
 .container{
     max-width: 1300px;
     width: min(90%, 75rem);
@@ -122,7 +134,11 @@ img{
 .whatWeDo-area .col {
     flex: 33%;
     padding: 20px;
+}
+.whatWeDo-area .col-sm-4:hover{
     cursor: pointer;
+    transform: scale(0.90);
+    transition: all 0.5s ease-in;
 }
 .hidden{
     display: none;
